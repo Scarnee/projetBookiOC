@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -57,7 +58,138 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+/****** Header ******/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 79px;
+}
+.menu{
+    display: flex;
+    padding: 0px 50px 0px 50px;
+    gap: 68px;
+    align-items: center;
+}
+.menu a:hover{
+    color: #0065FC;
+    border-top: solid #0065FC;  
+}
+.menu a{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
 
+header img{
+    height: 19px;
+    padding: 30px 50px 30px 0px;
+}
+
+/******Section Informations******/
+.informations{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.informations .headline{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+   height: 53px;
+}
+.headline h1{
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+}
+.headline h2{
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+.informations .searchBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 49px;
+    width: 377px;
+    gap: 24px;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+}
+.informations .searchBar i{
+    display: flex;
+    color: black;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    height: 49px; 
+    width: 50px;
+    align-items: center;
+    justify-content: center; 
+}
+.informations .searchBar p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.informations button{
+    color: white;
+    background-color: #0065FC;
+    border: 0px;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px 16px 15px 16px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.filters{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    height: 50px;
+    font-weight: 700;
+}
+.filters ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 17px;
+    gap: 15px;
+    height: 100%;
+}
+.filters li{
+    display: flex;
+    align-items: center;
+    border: solid 2px #D9d9d9;
+    border-radius: 25px 25px 25px 25px;
+    padding: 4px 19px 4px 19px;
+    gap: 10px;
+}
+.filters li:hover{
+    background-color: #DEEBFF;
+}
+.filters i{
+    color: #0065FC;
+}
+.infobar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.infobar i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px 12px 12px 12px;
+    border: solid 1px #D9d9d9;
+
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
