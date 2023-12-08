@@ -19,11 +19,13 @@
 <body>
     <div class="main-container">
         <header>
-            <img src="images/logo/Booki.png" alt="Logo Booki">
+            <div class="logo">
+                <img src="images/logo/Booki.png" alt="Logo Booki">
+            </div>
             <nav class="menu">
                 <ol>
-                    <li>Hebergements</li>
-                    <li>Activites</li>   
+                    <li><a href="#hebergements">Hebergements</a></li>
+                    <li><a href="#activites">Activites</a></li>   
                 </ol>  
             </nav>
         </header>
@@ -38,12 +40,13 @@
                     <form action="" method="get" class="formInput">
                         <label for="ville"></label>
                         <input type="text" name="ville" id="ville" required style="width: 147px;" />
-                        <button>Rechercher</button>
+                        <button class="search">Rechercher</button>  
+                        <button class="logoSearch"><i class="fa-solid fa-magnifying-glass" style="color: white; background-color: #0065FC; border-radius: 15px 15px 15px 15px;"></i></button>                       
                     </form>                    
                 </div>
                 <div class="filters">
                     <p>Filtres</p>
-                    <ul>
+                    <ul class="liste-filtres">
                         <li><i class="fa-solid fa-money-bill-wave"></i>Economique</li>
                         <li><i class="fa-solid fa-person"></i>Familial</li>
                         <li><i class="fa-solid fa-heart"></i>Romantiques</li>
@@ -56,7 +59,7 @@
                 </div>
             </div>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section class="hebergements" id="hebergements">
                     <h1>Hebergements a Marseille</h1>
                     <div class="gridHebergement">
                         <a href="#">
@@ -231,7 +234,7 @@
                     </div>
                 </section>
             </div>
-            <section class="activites">
+            <section class="activites" id="activites">
                 <h2>Activites a Marseille</h2>
                 <div class="liste-activite">
                     <a href="#">
@@ -260,9 +263,9 @@
                     </a>
                     <a href="#">
                         <div class="card-activite">
-                            <img src="./images/activites/florian-wehde.jpg" alt="Notre-Dane-de-la-Garde">
+                            <img src="./images/activites/florian-wehde.jpg" alt="Notre-Dame-de-la-Garde">
                             <div class="activite-txt">
-                                <h3 class="card-title">Notre-Dane-de-la-Garde</h3>
+                                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
                             </div>     
                         </div>
                     </a>
@@ -270,7 +273,30 @@
 
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <nav class="a-propos">
+                <ul>
+                    <li><h2>A Propos</h2></li>
+                    <li><h3>Fonctionnement du site</h3></li>
+                    <li><h3>Conditions generales</h3></li>
+                    <li><h3>Donnees et confidentialites</h3></li>
+                </ul>
+            </nav>
+            <nav class="nos-hebergements">
+                <ul>
+                    <li><h2>Nos hebergements</h2></li>
+                    <li><h3>Charte qualite</h3></li>
+                    <li><h3>Proposez votre hotel</h3></li>
+                </ul>
+            </nav>
+            <nav class="assistance">
+                <ul>
+                    <li><h2>Assistance</h2></li>
+                    <li><h3>Centre d'aide</h3></li>
+                    <li><h3>Nous contacter</h3></li>
+                </ul>
+            </nav>      
+        </footer>
     </div>
 </body>
 
