@@ -87,6 +87,7 @@ header{
     display: flex;
     height: 100%;
     align-items: center;
+    border-top:  white solid;
 }
 
 header img{
@@ -124,6 +125,9 @@ header img{
     width: 377px;
     
     border-radius: 15px 15px 15px 15px;
+}
+.formInput i{
+    border: none !important;
 }
 .informations .searchBar i{
     display: flex;
@@ -188,10 +192,10 @@ header img{
     display: flex;
     align-items: center;
     border: solid 2px #D9d9d9;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 25px 25px 25px 25px;
     padding: 4px 19px 4px 19px;
     gap: 10px;
-    height: 50px;
+    height: 40px;
 }
 .filters li:hover{
     background-color: #DEEBFF;
@@ -251,10 +255,19 @@ header img{
 }
 
 .gridHebergement{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 30px;
+}
+.gridRow{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width: 100%;
+}
+.gridRow a{
+    width: 30% ;
 }
 .hebergements .card{
     display: flex;
@@ -484,6 +497,7 @@ footer h3{
         gap: 0px !important;
     }
     .menu li{
+        font-size: 16px;
         justify-content: center;
         width: 100%;
         border-bottom: #D9d9d9 solid 2px;
@@ -556,9 +570,14 @@ footer h3{
     
     /*hebergements et populaires*/
 
-    .gridHebergement{
+    .gridHebergement .gridRow{
         display: flex;
         flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+    .gridRow a{
+        width: 100%;
     }
     .gridHebergement img{
         max-width: none !important;
@@ -583,9 +602,12 @@ footer h3{
     }
     .populaires{
         margin-top: 0;
+        padding: 30px 20px 30px 20px !important;
     }
     .hebergements{
         background-color: white !important;
+        padding:  30px 20px 30px 20px !important;
+        width: 100%;
     }
     .populaires{
         border-radius: 0 !important;
