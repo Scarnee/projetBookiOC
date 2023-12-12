@@ -209,8 +209,10 @@ header img{
 .filters i{
     color: #0065FC;
 }
-.filters p{
+.filters h2{
     margin: 0;
+    font-size: 18px;
+    font-weight: 700;
 }
 .infobar{
     display: flex;
@@ -412,7 +414,7 @@ footer h3{
     .filters{
         flex-direction: column;
     }
-    .filters p{
+    .filters h2{
         align-self: self-start;
     }
     .filters ul{
@@ -506,11 +508,12 @@ footer h3{
         font-size: 16px;
         justify-content: center;
         width: 100%;
-        border-bottom: #D9d9d9 solid 2px;
+        border-bottom: #D9d9d9  solid 2px;
     }
     .menu li:hover{
-        border-bottom: #0065FC solid ;
+        border-bottom: #0065FC  solid 2px;
         border-top: none;
+        margin-bottom: -2px;
     }
     /*informations*/
     .informations{
@@ -532,7 +535,7 @@ footer h3{
         padding: 0;
         margin: 0;
     }
-    .filters p{
+    .filters h2{
         align-self: self-start;
     }
     .liste-filtres li{
@@ -627,6 +630,12 @@ footer h3{
     }
     .liste-activite img{
         height: 141px;
+    }
+    .liste-activite img[alt="Notre-Dame-de-la-Garde"]{
+        object-position: 50% 20%;
+    }
+    .liste-activite img[alt="Vieux-Port"]{
+        object-position: 50% 70%;
     }
     
     
